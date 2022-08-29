@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 112.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(226deg, 43%, 10%);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */

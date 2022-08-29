@@ -1,0 +1,22 @@
+{
+  "name": "time-tracking-dashboard",
+  "version": "1.0.0",
+  "description": "time tracker",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AfopeM/Time-tracking-dashboard.git"
+  },
+  "author": "AfopeM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AfopeM/Time-tracking-dashboard/issues"
+  },
+  "homepage": "https://github.com/AfopeM/Time-tracking-dashboard#readme",
+  "dependencies": {
+    "sass": "^1.54.5"
+  }
+}
