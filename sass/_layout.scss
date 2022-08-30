@@ -1,0 +1,10 @@
+@use "base" as b;
+.container {
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: b.$Desktop) {
+}

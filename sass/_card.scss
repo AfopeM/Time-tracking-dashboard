@@ -1,0 +1,143 @@
+@use "base" as b;
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 65px);
+
+  //   PROFILE
+  &--profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 40px);
+
+    &-top {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      padding: 2rem;
+      border-radius: 15px;
+
+      grid-column: 1;
+      grid-row: 1 / 5;
+      z-index: 3;
+
+      box-shadow: 0 10px 20px rgba(#000000, 0.25);
+      background-color: b.$Blue;
+
+      img {
+        border-radius: 50%;
+        border: 3px solid white;
+        max-width: 75px;
+      }
+
+      span {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: b.$Pale-Blue;
+      }
+
+      h1 {
+        display: block;
+        font-weight: 300;
+        font-size: 1.7rem;
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+      grid-column: 1;
+      grid-row: 2 / -1;
+
+      color: b.$Pale-Blue;
+      font-size: 1.1rem;
+      font-weight: 300;
+      padding: 1.5rem 2rem;
+
+      border-radius: 15px;
+      background-color: b.$Dark-blue;
+
+      li:hover {
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__top {
+    display: block;
+    padding: 2rem;
+    border-radius: 15px;
+
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+    &--work {
+      @include b.icon(b.$Light-orange);
+      background-image: url("../images/icon-work.svg");
+    }
+    &--play {
+      @include b.icon(b.$Soft-blue);
+      background-image: url("../images/icon-play.svg");
+    }
+    &--study {
+      @include b.icon(b.$Light-red);
+      background-image: url("../images/icon-study.svg");
+    }
+    &--exercise {
+      @include b.icon(b.$Lime-green);
+      background-image: url("../images/icon-exercise.svg");
+    }
+    &--social {
+      @include b.icon(b.$Violet);
+      background-image: url("../images/icon-social.svg");
+    }
+    &--self-care {
+      @include b.icon(b.$Soft-orange);
+      background-image: url("../images/icon-self-care.svg");
+    }
+  }
+
+  &__title {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  img {
+    justify-self: end;
+  }
+
+  &__current {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  &__previous {
+    font-size: 1rem;
+    font-weight: 300;
+    color: b.$Pale-Blue;
+    text-align: end;
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    padding: 1.5rem;
+    margin-top: -0.7rem;
+    border-radius: 15px;
+    background-color: b.$Dark-blue;
+
+    grid-column: 1;
+    grid-row: 2 / -1;
+  }
+}
+
+@media (min-width: b.$Desktop) {
+}
