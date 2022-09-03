@@ -1,7 +1,7 @@
 // RESPONSIVE
 
 $Mobile: 375px;
-$Desktop: 750px;
+$Desktop: 1140px;
 
 // COLOUR
 $Blue: hsl(246, 80%, 60%);
@@ -36,7 +36,7 @@ html {
 
 body {
   background-color: $Very-dark-blue;
-  padding: 4rem 0;
+  display: grid;
 }
 
 img {
@@ -49,6 +49,13 @@ ul {
 
 .active {
   color: white;
+}
+
+@media (min-width: $Desktop) {
+  body {
+    align-items: center;
+    height: 100vh;
+  }
 }
 
 // MIXIN

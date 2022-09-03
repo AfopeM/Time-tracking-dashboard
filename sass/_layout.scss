@@ -1,10 +1,18 @@
 @use "base" as b;
 .container {
+  width: 90%;
+  margin: 8vh auto;
+
   display: grid;
-  grid-template-columns: 80%;
+  grid-template-columns: minmax(400px, 600px);
   justify-content: center;
   gap: 1.5rem;
 }
 
 @media (min-width: b.$Desktop) {
+  .container {
+    width: 80%;
+    grid-template-columns: repeat(4, minmax(200px, 275px));
+    grid-template-rows: repeat(2, 250px);
+  }
 }

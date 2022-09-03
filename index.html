@@ -22,12 +22,12 @@
   </head>
   <body>
     <main class="container">
-      <div class="card card--profile">
-        <div class="card--profile-top">
+      <div class="card-profile">
+        <div class="card-profile__top">
           <img src="images/image-jeremy.png" alt="Image-Jeremy" />
           <h1><span>Report for </span>Jeremy Robson</h1>
         </div>
-        <ul class="card--profile-bottom">
+        <ul class="card-profile__bottom">
           <li>Daily</li>
           <li class="active">Weekly</li>
           <li>Monthly</li>
@@ -36,60 +36,90 @@
 
       <div class="card">
         <div class="card__top card__top--work"></div>
-        <div class="card__bottom card__bottom--work">
+        <div class="card__bottom">
           <h2 class="card__title">Work</h2>
           <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" />
-          <p class="card__current">32hrs</p>
-          <p class="card__previous">Last Week - 36hrs</p>
+          <div class="card__content">
+            <p class="card__time current-val--work">32 hrs</p>
+            <p class="card__text">
+              Last Week -
+              <span class="previous-val--work">36 hrs</span>
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="card">
         <div class="card__top card__top--play"></div>
-        <div class="card__bottom card__bottom--play">
+        <div class="card__bottom">
           <h2 class="card__title">Play</h2>
           <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" />
-          <p class="card__current">10hrs</p>
-          <p class="card__previous">Last Week - 8hrs</p>
+          <div class="card__content">
+            <p class="card__time current-val--play">10 hrs</p>
+            <p class="card__text">
+              Last Week -
+              <span class="previous-val--play">8 hrs</span>
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="card">
         <div class="card__top card__top--study"></div>
-        <div class="card__bottom card__bottom--study">
+        <div class="card__bottom">
           <h2 class="card__title">Study</h2>
           <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" />
-          <p class="card__current">4hrs</p>
-          <p class="card__previous">Last Week - 7hrs</p>
+          <div class="card__content">
+            <p class="card__time current-val--study">4 hrs</p>
+            <p class="card__text">
+              Last Week -
+              <span class="previous-val--study">7 hrs</span>
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="card">
         <div class="card__top card__top--exercise"></div>
-        <div class="card__bottom card__bottom--exercise">
+        <div class="card__bottom">
           <h2 class="card__title">Exercise</h2>
           <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" />
-          <p class="card__current">4hrs</p>
-          <p class="card__previous">Last Week - 5hrs</p>
+          <div class="card__content">
+            <p class="card__time current-val--exercise">4 hrs</p>
+            <p class="card__text">
+              Last Week -
+              <span class="previous-val--exercise">5 hrs</span>
+            </p>
+          </div>
         </div>
       </div>
       <div class="card">
         <div class="card__top card__top--social"></div>
-        <div class="card__bottom card__bottom--social">
+        <div class="card__bottom">
           <h2 class="card__title">Social</h2>
           <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" />
-          <p class="card__current">5hrs</p>
-          <p class="card__previous">Last Week - 10hrs</p>
+          <div class="card__content">
+            <p class="card__time current-val--social">5 hrs</p>
+            <p class="card__text">
+              Last Week -
+              <span class="previous-val--social">10 hrs</span>
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="card">
-        <div class="card__top card__top--self-care"></div>
-        <div class="card__bottom card__bottom--self-care">
+        <div class="card__top card__top--selfcare"></div>
+        <div class="card__bottom">
           <h2 class="card__title">Self-Care</h2>
           <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" />
-          <p class="card__current">2hrs</p>
-          <p class="card__previous">Last Week - 2hrs</p>
+          <div class="card__content">
+            <p class="card__time current-val--selfcare">2 hrs</p>
+            <p class="card__text">
+              Last Week -
+              <span class="previous-val--selfcare">2 hrs</span>
+            </p>
+          </div>
         </div>
       </div>
     </main>
