@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/AfopeM/Time-tracking-dashboard)
+- Live Site URL: [Live Site](https://afopem.github.io/Time-tracking-dashboard/)
 
 ## My process
 
@@ -41,7 +41,12 @@ Users should be able to:
 
 ### What I learned
 
+- How to compare Object keys with string variable.
+- How to properly utilize CSS grid minmax function.
+
 ### Useful resources
+
+[Stackoverflow](https://stackoverflow.com/questions/40683151/compare-a-string-to-a-key-in-a-javascript-object)
 
 ## Author
 
